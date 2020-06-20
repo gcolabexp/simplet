@@ -1,0 +1,118 @@
+INFO:simpletransformers.t5.t5_utils: Creating features from dataset file at cache_dir/
+100%
+6079/6079 [5:35:28<00:00, 3.31s/it]
+INFO:simpletransformers.t5.t5_utils: Saving features into cached file cache_dir/t5-base_cached_106079
+
+/usr/local/lib/python3.6/dist-packages/torch/storage.py:34: FutureWarning: pickle support for Storage will be removed in 1.5. Use `torch.save` instead
+  warnings.warn("pickle support for Storage will be removed in 1.5. Use `torch.save` instead", FutureWarning)
+INFO:simpletransformers.t5.t5_model: Training started
+Epoch: 100%
+2/2 [5:35:10<00:00, 10055.15s/it]
+Current iteration: 100%
+3040/3040 [5:35:10<00:00, 6.62s/it]
+Running loss: 4.120878/usr/local/lib/python3.6/dist-packages/torch/optim/lr_scheduler.py:231: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+Running loss: 0.033297/usr/local/lib/python3.6/dist-packages/torch/optim/lr_scheduler.py:200: UserWarning: Please also save or load the state of the optimzer when saving or loading the scheduler.
+  warnings.warn(SAVE_STATE_WARNING, UserWarning)
+Running loss: 0.019729
+Current iteration: 100%
+3040/3040 [2:55:02<00:00, 3.45s/it]
+Running loss: 0.003098
+
+INFO:simpletransformers.t5.t5_model: Training of t5-base model complete. Saved to outputs/.
+INFO:simpletransformers.t5.t5_utils: Creating features from dataset file at cache_dir/
+100%
+6079/6079 [00:30<00:00, 196.60it/s]
+INFO:simpletransformers.t5.t5_utils: Saving features into cached file cache_dir/t5-base_cached_106079
+
+100%
+760/760 [11:26<00:00, 1.11it/s]
+INFO:simpletransformers.t5.t5_model:{'eval_loss': 0.11459356559391477}
+
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.71s/it]
+
+Decoding outputs: 100%
+1/1 [00:02<00:00, 2.07s/it]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.49s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.35it/s]
+
+['SELECT DISTINCT flight_1.f.f1.f1.f1.f']
+
+
+=================
+print(model.predict(["translate English to SQL: flights from phoenix to milwaukee"]))
+print(model.predict(["translate English to SQL: i'm starting from denver"]))
+print(model.predict(["translate English to SQL: denver to atlanta"]))
+print(model.predict(["translate English to SQL: show me the flights from baltimore to atlanta"]))
+
+
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.52s/it]
+
+Decoding outputs: 100%
+1/1 [00:01<00:00, 1.98s/it]
+1/1 [00:01<00:00, 1.52s/it]
+
+Decoding outputs: 100%
+1/1 [00:01<00:00, 1.98s/it]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.49s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.16it/s]
+
+['SELECT DISTINCT flight_1.f.f1.f1.f1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.50s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.45it/s]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.50s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.27it/s]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
+
+
+=================
+
+
+1/1 [00:01<00:00, 1.52s/it]
+
+Decoding outputs: 100%
+1/1 [00:01<00:00, 1.98s/it]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.49s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.16it/s]
+
+['SELECT DISTINCT flight_1.f.f1.f1.f1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.50s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.45it/s]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
+Generating outputs: 100%
+1/1 [00:01<00:00, 1.50s/it]
+
+Decoding outputs: 100%
+1/1 [00:00<00:00, 3.27it/s]
+
+['SELECT DISTINCT flight_1.flight_1.flight_1.f']
